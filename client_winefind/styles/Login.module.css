@@ -1,0 +1,135 @@
+.btn_modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+  background-color: rgb(188, 131, 235);
+  border-color: lightgrey;
+  color: rgb(252, 241, 255);
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-y: hidden;
+  background: rgba(49, 49, 49, 0.8);
+  z-index: 10;
+}
+
+.modal_contents {
+  position: fixed;
+  left: 50%;
+  top: 50vh;
+  /* bottom: 50%; */
+  /* top: 450%; */
+  /* left: 50%; */
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  min-width: 30rem;
+  z-index: 100;
+  align-content: center;
+  animation: fadein 0.5s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms {
+  margin: 50px 0px 0px 20px;
+  padding: 15px;
+  /* border: 1px gray solid; */
+  /* border-radius: 20px; */
+}
+.form {
+  margin: 3px;
+}
+.form > input {
+  border: none;
+  margin-left: 10px;
+  margin-right: 5px;
+  height: 2rem;
+  width: 17rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.errorMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.signup_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_box {
+  display: flex;
+}
+
+.close_modal {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  padding: 5px 7px;
+  cursor: pointer;
+  animation: fadeout 0.5s;
+}
+
+.nav_btn {
+  font-size: 1rem;
+  margin: 1.5rem;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+.nav_btn:hover {
+  border-bottom: 1px solid #cda581;
+  cursor: pointer;
+  background: linear-gradient(
+    to bottom,
+    #f6dcce,
+    #eecebb,
+    #e6c1a8,
+    #ddb496,
+    #d4a783,
+    #cea17a,
+    #c89a70,
+    #c29467,
+    #bf9165,
+    #bd8f62,
+    #ba8c60,
+    #b88a5e
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}

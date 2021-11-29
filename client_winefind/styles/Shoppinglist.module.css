@@ -1,0 +1,146 @@
+.mall_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_box {
+  display: flex;
+  /* width: 77%; */
+
+  /* padding: 1rem; */
+  /* margin: 0rem 8rem; */
+  background: white;
+  border: 1px #cda581 solid;
+  /* border: goldenrod 3px solid; */
+}
+.mall_content_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14rem;
+  /* border: red 3px solid; */
+}
+
+.filter_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-left: 0.1px black dotted;
+}
+.text_and_allcheck {
+  height: 100px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  width: 95%;
+  margin: 0px 15px 15px 15px;
+  border-bottom: 2px solid grey;
+  justify-content: space-between;
+}
+
+.filter_content {
+  min-height: 150px;
+  min-width: 300px;
+  width: 100%;
+  padding: 12px;
+}
+
+.filter_top {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
+}
+
+.filter_title {
+  font-size: 23px;
+}
+.filter_type {
+  display: flex;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+
+.filter_button {
+  border: 1px gray solid;
+  margin: 3px;
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+.filter_button:hover {
+  color: #fff;
+  border: 1px gray solid;
+  background-color: #cda581;
+}
+.filter_button:focus {
+  color: #fff;
+  border: 1px gray solid;
+  background-color: #cda581;
+}
+
+.bottom_border {
+  border-bottom: 1px black solid;
+}
+
+.text_big {
+  font-size: 2rem;
+}
+
+.shoppinglist_btn {
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.85rem;
+  letter-spacing: 0.3em;
+  color: #cda581;
+  border-radius: 7px;
+  padding: 12px;
+  margin: 0px 2px;
+  transition: all 0.7s ease-out;
+  background: linear-gradient(
+    270deg,
+    #cda581,
+    rgba(146, 111, 52, 0.8),
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0)
+  );
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  border: none;
+  border: 2px solid rgba(223, 190, 106, 0.3);
+}
+
+.shoppinglist_btn:hover {
+  color: #fff;
+  border: 1px solid rgba(223, 190, 106, 0);
+  color: white;
+  background-position: 100% 50%;
+}
+.no_cartItems {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  min-width: 700px;
+}
+.bill_cart {
+}
+.kakaopay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  font-size: 16px;
+  background-color: #ffdf00;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}

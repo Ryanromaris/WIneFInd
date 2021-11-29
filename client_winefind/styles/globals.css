@@ -1,16 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Jua&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+input {
+  border: none;
+}
+
+.text_font {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.text_eng {
+  font-family: 'Playfair Display', serif;
+}
+
+.text_color {
+  color: transparent;
+  background: linear-gradient(
+    to top,
+    #f6dcce,
+    #eecebb,
+    #e6c1a8,
+    #ddb496,
+    #d4a783,
+    #cea17a,
+    #c89a70,
+    #c29467,
+    #bf9165,
+    #bd8f62,
+    #ba8c60,
+    #b88a5e
+  );
+  -webkit-background-clip: text;
+}
+/* #232224 */
+.mainpage_container {
+  width: 100%;
+  /* border: 3px aqua solid; */
+  z-index: -100;
+  background-color: #232224;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.guide_container {
+  width: 1200px;
+  min-width: 1200px;
+  background-color: #3b3b3b;
+  /* border: 3px red solid; */
+}
+
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 150px;
+  font-size: 15px;
+  color: #b77dfa;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 0px #ccc;
 }
